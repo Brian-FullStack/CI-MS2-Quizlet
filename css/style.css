@@ -84,6 +84,18 @@ body{
     color: #48DEA8;
 }
 
+/*Rules Modal Styling*/
+.modal-header{
+    margin: 0 auto;
+    color: #2E3A59;
+}
+
+.modal-content{
+    color: #2E3A59;
+    border-radius: 5px 70px;
+}
+
+
 /*Footer social links*/
 .social-links{
     display: flex;
