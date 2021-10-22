@@ -39,3 +39,8 @@ body{
     cursor: pointer;
     text-shadow: 2px 2px 12px #2E3A59;
 }
+
+#playArrow:hover{
+    color: #48DEA8;
+    transition: 500ms;
+}
