@@ -10,6 +10,7 @@ body{
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
 }
+/*Home Page Styles*/
 
 .home-container{
     width: 100%;
@@ -18,6 +19,7 @@ body{
     min-height: 90vh;
 }
 
+/*Start Box Style: border-radius 0 30px sets the top right and bottom right radius to 30px*/
 .start-box{
     width: 30%;
     border: 4px solid white;
@@ -68,6 +70,21 @@ body{
     transition: 300ms;
 }
 
+/*Style the modal trigger and remove default styling*/
+#rulesBtn{
+    color: #fff;
+    display: flex;
+}
+
+#rulesBtn span{
+    margin: 0 auto;
+}
+
+#rulesBtn:hover{
+    color: #48DEA8;
+}
+
+/*Footer social links*/
 .social-links{
     display: flex;
     justify-content: space-between;
