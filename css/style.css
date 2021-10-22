@@ -17,3 +17,17 @@ body{
     border-radius: 0 120px;
     min-height: 90vh;
 }
+
+.start-box{
+    width: 30%;
+    border: 4px solid white;
+    border-radius: 0 30px;
+    text-align: center;
+    margin: 4em auto;
+    padding: 1em;
+}
+
+#startTitle{
+    color: #fff;
+    font-size: 24px;
+}
