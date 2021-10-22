@@ -42,7 +42,7 @@ body{
 
 #playArrow:hover{
     color: #48DEA8;
-    transition: 500ms;
+    transition: 300ms;
 }
 
 .nav-box{
@@ -60,4 +60,10 @@ body{
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0px 2px 15px #2E3A59;
+}
+
+.nav-button:hover{
+    border-color: #48DEA8;
+    color: #48DEA8;
+    transition: 300ms;
 }
