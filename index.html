@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
-     <!--Font Awsome CDN-->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Font Awsome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Quizlet</title>
 </head>
+
 <body>
     <div class="home-container" id="homeScreen">
         <div class="start-box">
@@ -21,10 +23,13 @@
             <br>
             <i class="fas fa-play" id="playArrow"></i>
         </div>
-        
+
         <div class="nav-btnBox">
             <div class="nav-button">
-                <span id="rulesBtn">Rules</span>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" id="rulesBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span >Rules</span>
+                </button>
             </div>
             <div class="nav-button">
                 <span id="highScoreBtn">High Score</span>
@@ -34,7 +39,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="social-links">
             <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -43,35 +48,33 @@
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-    
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
-  
+
     <script src="js/main.js"></script>
     <!--Bootstrap JS CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
