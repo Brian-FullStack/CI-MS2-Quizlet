@@ -67,3 +67,17 @@ body{
     color: #48DEA8;
     transition: 300ms;
 }
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 1em auto;
+}
+
+.social-links a{
+    color: #2E3A59;
+    font-size: 36px;
+}
+
