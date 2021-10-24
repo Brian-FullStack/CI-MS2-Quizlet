@@ -70,6 +70,28 @@ body{
     transition: 300ms;
 }
 
+/**********Quiz Page*******/
+.quiz-container{
+    background-color: #9471DF;
+    border: 2px solid #9471DF;
+    border-radius: 0 120px;
+    width: 100%;
+    min-height: 170px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#question{
+    font-size: 1.5em;
+    color: #fff;
+    margin: 1em;
+    text-shadow: 10px 10px 50px #fff;
+}
+
 /*Style the modal trigger and remove default styling*/
 #rulesBtn{
     color: #fff;
