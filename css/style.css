@@ -110,3 +110,11 @@ body{
     font-size: 36px;
 }
 
+/*Footer Copyright text*/
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    line-height: 8px;
+    color: #494E58;
+}
+
