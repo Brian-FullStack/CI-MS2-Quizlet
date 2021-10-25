@@ -1,3 +1,245 @@
+//Questions taken from  w3schools quiz
+let questionList = [{
+    question: 'What does HTML stand for?',
+    a: 'Hyper Text Markup Language',
+    b: 'Hyperlinks and Text Markup Language',
+    c: 'Home Tool Markup Language',
+    d: 'How To Make Lasagne',
+    answer: 'A'
+},
+{
+    question: 'Choose the correct HTML element for the largest heading:',
+    a: 'h1',
+    b: 'h6',
+    c: 'heading',
+    d: 'head',
+    answer: 'A'
+},
+{
+    question: 'What is the correct HTML element for inserting a line break?',
+    a: 'em',
+    b: 'break',
+    c: 'lb',
+    d: 'br',
+    answer: 'D'
+},
+{
+    question: 'What is the correct HTML for creating a hyperlink?',
+    a: ' &lt;a name="http://www.w3schools.com"&gt; W3Schools.com &lt/a&gt;',
+    b: '&lt;a href="http://www.w3schools.com"&gt; W3Schools.com &lt/a&gt;',
+    c: '&lt;a "http://www.w3schools.com"&gt; W3Schools.com &lt/a&gt;',
+    d: '&lt;a url="http://www.w3schools.com"&gt; W3Schools.com &lt/a&gt;',
+    answer: 'B'
+},
+{
+    question: 'Which of these elements are all table elements?',
+    a: 'table, tr, td',
+    b: 'table, thead, tfoot',
+    c: 'thead, tbody, tr',
+    d: 'trow, tcol, tdata',
+    answer: 'A'
+},
+{
+    question: 'How can you make a numbered list?',
+    a: 'list',
+    b: 'dl',
+    c: 'ol',
+    d: 'ul',
+    answer: 'C'
+},
+{
+    question: 'What is the correct HTML for making a text input field?',
+    a: 'input type="text"',
+    b: 'textinput type="text"',
+    c: 'input type="textfield"',
+    d: 'textfield',
+    answer: 'A'
+},
+{
+    question: 'Which HTML element is used to specify a footer for a document or section?',
+    a: 'bottom',
+    b: 'bodyend',
+    c: 'footer',
+    d: 'section',
+    answer: 'C'
+},
+{
+    question: 'In HTML, which attribute is used to specify that an input field must be filled out?',
+    a: 'validate',
+    b: 'required',
+    c: 'placeholder',
+    d: 'needed',
+    answer: 'B'
+},
+{
+    question: 'Which HTML element defines navigation links?',
+    a: 'links',
+    b: 'navigation',
+    c: 'nav',
+    d: 'navigate',
+    answer: 'C'
+},
+{
+    question: 'What does CSS stand for?',
+    a: 'Creative Style Sheets',
+    b: 'Cascading Style Sheets',
+    c: 'Computer Style Sheets',
+    d: 'Colourful Style Sheets',
+    answer: 'B'
+},
+{
+    question: 'What is the correct HTML for referring to an external style sheet?',
+    a: '&lt;stylesheet&gt;style.css&lt;/stylesheet&gt',
+    b: '&lt;link rel="stylesheet" href="style.css"&gt',
+    c: '&lt;a href="style.css"&gt;css&lt/a&gt"',
+    d: '&lt;style src="style.css"&gt;',
+    answer: 'B'
+},
+{
+    question: 'Which is the correct syntax?',
+    a: 'body{color:blue;}',
+    b: '{body:color = blue}',
+    c: 'bodyColor = "blue"',
+    d: 'body(color: blue;)',
+    answer: 'A'
+},
+{
+    question: 'How do you insert a comment in a CSS file?',
+    a: '//this is a comment//',
+    b: '"this is a comment"',
+    c: '/*this is a comment*/',
+    d: '&lt!--this is a comment--&gt;',
+    answer: 'C'
+},
+{
+    question: 'Which property is used to change the background color?',
+    a: 'bgcolor',
+    b: 'body-color',
+    c: 'background-color',
+    d: 'color',
+    answer: 'C'
+},
+{
+    question: 'Which CSS property controls the text size?',
+    a: 'text-size',
+    b: 'font-style',
+    c: 'text-style',
+    d: 'font-size',
+    answer: 'D'
+},
+{
+    question: 'What is the correct CSS syntax for making all the <p> elements bold?',
+    a: 'p{text-size: bold;}',
+    b: 'p style="text-size: bold;"',
+    c: 'all.p{font-style: bold;}',
+    d: 'p{font-weight: bold;}',
+    answer: 'D'
+},
+{
+    question: 'How do you display hyperlinks without an underline?',
+    a: 'a{underline: none;}',
+    b: 'a{text-decoration: none;}',
+    c: 'a{decoration: no-underline;}',
+    d: 'a{text-style: none;}',
+    answer: 'B'
+},
+{
+    question: 'How do you make each word in a text start with a capital letter?',
+    a: 'transform: capitalize;',
+    b: 'text-transform: uppercase;',
+    c: 'text-transform: capitalize;',
+    d: 'text-style: capitalize',
+    answer: 'C'
+},
+{
+    question: 'How do you select an element with id "demo"?',
+    a: 'id:demo',
+    b: '.demo',
+    c: '*demo',
+    d: '#demo',
+    answer: 'D'
+},
+{
+    question: 'Inside which HTML element do we put the JavaScript?',
+    a: 'js',
+    b: 'script',
+    c: 'scripting',
+    d: 'javascript',
+    answer: 'B'
+},
+{
+    question: 'How do you write "Hello World" in an alert box?',
+    a: 'msgBox("Hello World")',
+    b: 'alertBox("Hello World")',
+    c: 'msg("Hello WOrld")',
+    d: 'alert("Hello World")',
+    answer: 'D'
+},
+{
+    question: 'How do you create a function in JavaScript?',
+    a: 'function myFunction()',
+    b: 'function = myFunction()',
+    c: 'function:myFunction()',
+    d: 'let function myFunction()',
+    answer: 'A'
+},
+{
+    question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+    a: 'if(i != 5)',
+    b: 'if(i <> 5)',
+    c: 'if i =! 5',
+    d: 'if i-= 5',
+    answer: 'A'
+},
+{
+    question: 'How does a FOR loop start?',
+    a: 'for i = 1 to 5',
+    b: 'for(i = 0; i <= 5;)',
+    c: 'for(let i = 0; i <= 5; i++)',
+    d: 'for(i is 5, i++)',
+    answer: 'C'
+},
+{
+    question: 'How can you add a comment in a JavaScript?',
+    a: '"&lt!--this is a comment--&gt;"',
+    b: '//This is a comment',
+    c: '**This is a comment**',
+    d: '/*This is a comment*/',
+    answer: 'B'
+},
+{
+    question: 'What is the correct way to write a JavaScript array?',
+    a: 'let colors = ["red","green","blue"]',
+    b: 'let colors = (1:"red", 2:"green", 3:"blue")',
+    c: 'let colors = {red, green, blue}',
+    d: 'let colors = "red","green","blue"',
+    answer: 'A'
+},
+{
+    question: 'How do you round the number 7.25, to the nearest integer?',
+    a: 'round(7.25)',
+    b: 'Math.rnd("7.25")',
+    c: 'Math.round(7.25)',
+    d: 'rnd(7.25)',
+    answer: 'C'
+},
+{
+    question: 'Which event occurs when the user clicks on an HTML element?',
+    a: 'onmouseclick',
+    b: 'onchange',
+    c: 'onmouseover',
+    d: 'onclick',
+    answer: 'D'
+},
+{
+    question: 'Which operator is used to assign a variable?',
+    a: '-',
+    b: '=',
+    c: '*',
+    d: '%',
+    answer: 'B'
+}
+];
 
 //--------To start the quiz
 /**
@@ -15,15 +257,15 @@ document.getElementById('playArrow').onclick = function () {
  * When the quiz is started display a question in the innerHTML of the head
  *  Display the possible quiz answers as radio button selections.
  */
-let question = document.getElementById('question');
-let homeBtn = document.getElementById('homeBtn');
-let currentQuestion = 0;
-let answerOption = document.querySelector('.answerOption');
-
-function displayQuestion(){
-    for(let i = 0; i < questionList.length; i++){
-        question.innerHTML = questionList[currentQuestion];
-        question;
-    }
-}
-displayQuestion();
+ let question = document.getElementById('question');
+ let homeBtn = document.getElementById('homeBtn');
+ let currentQuestion = 0;
+ let answerOption = document.querySelectorAll('.answerOption');
+ 
+ function displayQuestion() {
+     for (let i = 0; i < questionList.length; i++) {
+         question.innerHTML = questionList[currentQuestion].question;
+     }
+ }
+ displayQuestion();
+ //------------------------------------
