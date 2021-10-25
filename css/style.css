@@ -109,6 +109,11 @@ label{
     cursor: pointer;
 }
 
+label:hover{
+    border: 2px solid #9471DF;
+    box-shadow: 0 2px 10px #9471DF;
+}
+
 /*Style the modal trigger and remove default styling*/
 #rulesBtn{
     color: #fff;
@@ -157,3 +162,9 @@ label{
     color: #494E58;
 }
 
+@media screen and (min-width: 810px) {
+    .possible-answers{
+        width: 60%;
+        margin: 1em auto;
+    }
+}
