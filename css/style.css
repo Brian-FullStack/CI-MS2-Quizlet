@@ -92,6 +92,23 @@ body{
     text-shadow: 10px 10px 50px #fff;
 }
 
+/*Answer options*/
+.possible-answers{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+label{
+    margin: 1em 0;
+    border: 1px solid #9471DF;
+    border-radius: 10px;
+    padding: .5em;
+    color: #9471DF;
+    box-shadow: 0 2px 4px #9471DF;
+    cursor: pointer;
+}
+
 /*Style the modal trigger and remove default styling*/
 #rulesBtn{
     color: #fff;
