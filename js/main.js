@@ -269,3 +269,13 @@ document.getElementById('playArrow').onclick = function () {
  }
  displayQuestion();
  //------------------------------------
+
+ //Display a answers.
+//Set the answerA.innerHTML to the currentQuestion questionList.a/b/c/d
+function displayAnswers(){
+    answerOption[0].innerHTML = questionList[currentQuestion].a;
+    answerOption[1].innerHTML = questionList[currentQuestion].b;
+    answerOption[2].innerHTML = questionList[currentQuestion].c;
+    answerOption[3].innerHTML = questionList[currentQuestion].d;
+}
+displayAnswers();
