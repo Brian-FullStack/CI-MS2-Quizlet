@@ -44,7 +44,20 @@
         <h1 id="question">Question</h1>
     </div>
 
+    <div class="right-wrong-timer">
+        <div>
+            <span id="correct">0</span>
+            <i class="fas fa-check" id="check"></i>
+        </div>
+        <div id="timer">20</div>
+        <div>
+            <span id="wrong">0</span>
+            <i class="fas fa-times" id="times"></i>
+        </div>
+    </div>
+
     <div class="possible-answers">
+        <!--Input is wrapped in a label tag to increase useability-->
         <label>
             <input type="radio" name="ans" id="radioA" value="A" required>
             <span class="answerOption" id="answerA">Answer 1</span>
