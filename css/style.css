@@ -92,6 +92,37 @@ body{
     text-shadow: 10px 10px 50px #fff;
 }
 
+/*Styles for right-wrong-timer*/
+.right-wrong-timer{
+    text-align: center;
+    margin: 1em auto;
+    width: 10%;
+    font-size: 32px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    color: #2E3A59;
+}
+
+#correct, #wrong {
+    font-size: 18px;
+}
+
+#check{
+    color: #48DEA8;
+    text-shadow: 2px 2px 25px #48DEA8;
+}
+
+#times{
+    color: #CD4115;
+    text-shadow: 2px 2px 25px #CD4115;
+}
+
+#timer{
+    margin: 0 1.5em;
+    font-size: 1.5em;
+}
+
 /*Answer options*/
 .possible-answers{
     display: flex;
