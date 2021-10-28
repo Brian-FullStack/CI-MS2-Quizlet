@@ -330,3 +330,27 @@ document.getElementById('radioA').onclick = selectedAnswer;
 document.getElementById('radioB').onclick = selectedAnswer;
 document.getElementById('radioC').onclick = selectedAnswer;
 document.getElementById('radioD').onclick = selectedAnswer;
+
+//Calculate Score
+/**Depending on what score the user got, a different message will be displayed*/
+let quizGrade = document.getElementById('quizGrade');
+let quizResult = document.getElementById('resultText');
+function calculateScore() {
+    if(correctCount === 30) {
+        quizGrade.innerHTML = 'A+';
+        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) + '% Certified Hacker!! You know your stuff';
+    } else if(correctCount >= 25 ){
+        quizGrade.innerHTML = 'A';
+        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% You know your stuff!!';
+    } else if(correctCount >= 20) {
+        quizGrade.innerHTML = 'B';
+        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% Nice Work!!';    
+    } else if(correctCount >= 15) {
+        quizGrade.innerHTML = 'C';
+        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% You need to brush up on some stuff';        
+    } else if(correctCount < 10) {
+        quizGrade.innerHTML = 'D';
+        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% Do you even code?!! :/';    
+    }
+}
+document.getElementById('scoreBtn').onclick = calculateScore;
