@@ -151,7 +151,7 @@ label:hover{
     margin-left: 1em;
 }
 
-#homeBtn{
+#homeBtn, #scoreBtn{
     background-color: #9471DF;
     padding: 5px 10px;
     border: 1px solid #9471DF;
