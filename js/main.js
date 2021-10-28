@@ -279,3 +279,39 @@ function displayAnswers(){
     answerOption[3].innerHTML = questionList[currentQuestion].d;
 }
 displayAnswers();
+
+//When user selects an answer
+/**
+ * When the user selects an answer run a function that compares the selected answer to the correct answer
+ * if the answer is correct:
+ * increment the correct count
+ * display a new question
+ * 
+ * if the answer is incorrect:
+ * increment the wrong count
+ * display a new question
+ */
+let correctCount = 0;
+let wrongCount = 0;
+
+function selectedAnswer(){
+    let radioValue = this.value;
+    if(radioValue === questionList[currentQuestion].answer){
+        correctCount++;
+        document.getElementById('correct').innerHTML = correctCount;
+        currentQuestion++;
+        displayAnswers();
+        displayQuestion();
+    } else{
+        wrongCount++;
+        document.getElementById('wrong').innerHTML = wrongCount;
+        currentQuestion++;
+        displayQuestion();
+        displayAnswers();
+    }
+}
+
+document.getElementById('radioA').onclick = selectedAnswer;
+document.getElementById('radioB').onclick = selectedAnswer;
+document.getElementById('radioC').onclick = selectedAnswer;
+document.getElementById('radioD').onclick = selectedAnswer;
