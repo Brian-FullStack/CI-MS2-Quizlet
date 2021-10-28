@@ -79,7 +79,11 @@
     <div class="progress-area">
         <span id="questionCount"></span>
         <button id="homeBtn"><i class="fas fa-home"></i></button>
-        <button id="scoreBtn" style="display: none;">Score!</button>
+        <!-- Score Results Button trigger modal -->
+        <button type="button" id="scoreBtn" data-bs-toggle="modal"
+        data-bs-target="#resultsModal" style="display: none;">
+        <span>Score</span>
+    </button>
     </div>
 
     </div>
@@ -96,7 +100,7 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!--Rules Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -111,6 +115,25 @@
                         <li>At the end of each quiz your score will be calculated out of 30.</li>
                         <li>Test your coding knowledge.</li>
                     </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn nav-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Result Modal -->
+    <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quizGrade">A</h5>
+                </div>
+                <div class="modal-body">
+                    <span id="resultText"></span>
+                    <input type="text" placeholder="Name">
+                    <button>Save Score</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn nav-button" data-bs-dismiss="modal">Close</button>
