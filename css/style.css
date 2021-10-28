@@ -145,6 +145,23 @@ label:hover{
     box-shadow: 0 2px 10px #9471DF;
 }
 
+/* Progress Area */
+#questionCount{
+    color: #2E3A59;
+    margin-left: 1em;
+}
+
+#homeBtn{
+    background-color: #9471DF;
+    padding: 5px 10px;
+    border: 1px solid #9471DF;
+    border-radius: 5px;
+    float: right;
+    margin-right: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*Style the modal trigger and remove default styling*/
 #rulesBtn{
     color: #fff;
