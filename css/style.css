@@ -154,15 +154,50 @@ label:hover{
 #homeBtn, #scoreBtn{
     background-color: #9471DF;
     padding: 5px 10px;
-    border: 1px solid #9471DF;
+    border: 1px solid #fff;
     border-radius: 5px;
     float: right;
     margin-right: 2em;
     color: #fff;
     cursor: pointer;
+    box-shadow: 0px 2px 15px #2E3A59;
 }
 
-/*Style the modal trigger and remove default styling*/
+#scoreBtn:hover, #homeBtn:hover, #saveScore:hover{
+    border-color: #48DEA8;
+    color: #48DEA8;
+    transition: 300ms;
+}
+
+/*Score Modal*/
+.score-modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quizGrade{
+    font-size: 2em;
+}
+
+#resultText{
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+#saveScore{
+    background-color: #9471DF;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 15px #2E3A59;
+}
+
+/*Style the  result modal trigger and remove default styling*/
 #rulesBtn{
     color: #fff;
     display: flex;
@@ -180,6 +215,7 @@ label:hover{
 .modal-header{
     margin: 0 auto;
     color: #2E3A59;
+    font-size: 2em;
 }
 
 .modal-content{
