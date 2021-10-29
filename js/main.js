@@ -252,6 +252,14 @@ document.getElementById('playArrow').onclick = function () {
 }
 //------------------------------------
 
+//--------To exit the quiz
+/**When the user clicks the home button set the quiz page display to hidden and the home page display to block*/
+document.getElementById('homeBtn').onclick = function () {
+    document.getElementById('quizPage').style.display = 'none';
+    document.getElementById('homeScreen').style.display = 'block';
+}
+//------------------------------------
+
 //----------------Display a question. 
 /**
  * When the quiz is started display a question in the innerHTML of the head
