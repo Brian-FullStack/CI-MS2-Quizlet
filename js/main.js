@@ -249,6 +249,7 @@ let questionList = [{
 document.getElementById('playArrow').onclick = function () {
     document.getElementById('homeScreen').style.display = 'none';
     document.getElementById('quizPage').style.display = 'block';
+    countdown();
 }
 //------------------------------------
 
@@ -325,12 +326,14 @@ function selectedAnswer() {
         currentQuestion++;
         displayQuestion();
         questionNumber();
+        countdown();
     } else {
         wrongCount++;
         document.getElementById('wrong').innerHTML = wrongCount;
         currentQuestion++;
         displayQuestion();
         questionNumber();
+        countdown();
     }
 }
 
@@ -338,6 +341,31 @@ document.getElementById('radioA').onclick = selectedAnswer;
 document.getElementById('radioB').onclick = selectedAnswer;
 document.getElementById('radioC').onclick = selectedAnswer;
 document.getElementById('radioD').onclick = selectedAnswer;
+
+//Countdown timer
+/**
+ * Display a time of 20secs for each question
+ * when the countdown reaches 0 increment the wrong answer number
+ * and display the next question.
+ * The timer should start at 20 for each new question
+ */
+function countdown() {
+    let clock = document.getElementById('timer');
+    let time = 20;
+    setInterval( function() {
+        time--;
+        if( time === 0){
+            wrongCount++;
+            document.getElementById('wrong').innerHTML = wrongCount;
+            currentQuestion++;
+            displayQuestion();
+            questionNumber();
+            time = 20;
+        }
+        clock.innerHTML = time;
+    }, 1000);
+    clearInterval();
+}
 
 //Calculate Score
 /**Depending on what score the user got, a different message will be displayed*/
