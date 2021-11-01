@@ -288,16 +288,6 @@ function displayQuestion() {
 displayQuestion();
 //------------------------------------
 
-//Display answers.
-//Set the answerA.innerHTML to the currentQuestion questionList.a/b/c/d
-/* function displayAnswers() {
-    answerOption[0].innerHTML = questionList[currentQuestion].a;
-    answerOption[1].innerHTML = questionList[currentQuestion].b;
-    answerOption[2].innerHTML = questionList[currentQuestion].c;
-    answerOption[3].innerHTML = questionList[currentQuestion].d;
-}
-displayAnswers(); */
-
 //Display the question counter
 function questionNumber() {
     let questionCount = document.getElementById('questionCount');
@@ -317,10 +307,12 @@ questionNumber();
  */
 let correctCount = 0;
 let wrongCount = 0;
+let answerClicked = false;
 
 function selectedAnswer() {
     let radioValue = this.value;
     if (radioValue === questionList[currentQuestion].answer) {
+        answerClicked = true;
         correctCount++;
         document.getElementById('correct').innerHTML = correctCount;
         currentQuestion++;
@@ -328,6 +320,7 @@ function selectedAnswer() {
         questionNumber();
         countdown();
     } else {
+        answerClicked = true;
         wrongCount++;
         document.getElementById('wrong').innerHTML = wrongCount;
         currentQuestion++;
@@ -349,10 +342,10 @@ document.getElementById('radioD').onclick = selectedAnswer;
  * and display the next question.
  * The timer should start at 20 for each new question
  */
-function countdown() {
-    let clock = document.getElementById('timer');
-    let time = 20;
-    setInterval( function() {
+ let time = 20;
+ let clock = document.getElementById('timer');
+ function countdown(){
+    let countdownClock = setInterval(() => {
         time--;
         if( time === 0){
             wrongCount++;
@@ -361,10 +354,13 @@ function countdown() {
             displayQuestion();
             questionNumber();
             time = 20;
+        } else if(answerClicked){
+            clearInterval(countdownClock);
+            time = 20;
+            answerClicked = false;
         }
         clock.innerHTML = time;
     }, 1000);
-    clearInterval();
 }
 
 //Calculate Score
