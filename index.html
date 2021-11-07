@@ -30,9 +30,10 @@
                 data-bs-target="#exampleModal">
                 <span>Rules</span>
             </button>
-            <div class="nav-button">
-                <span id="highScoreBtn">High Score</span>
-            </div>
+            <button type="button" class="nav-button" id="highScoresBtn" data-bs-toggle="modal"
+                data-bs-target="#highScoreModal">
+                <span>High Score</span>
+            </button>
             <div class="nav-button">
                 <span id="contactBtn"><a href="contact.html">Contact</a></span>
             </div>
@@ -123,6 +124,23 @@
         </div>
     </div>
 
+    <!-- High Score Modal -->
+    <div class="modal fade" id="highScoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">High Scores</h5>
+                </div>
+                <div class="high-score-modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn nav-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Score Result Modal -->
     <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -132,7 +150,7 @@
                 </div>
                 <div class="score-modal-body">
                     <span id="resultText"></span>
-                    <input type="text" id="username" placeholder="Name">
+                    <input type="text" id="username" autocomplete="off" placeholder="Name">
                     <br>
                     <button id="saveScore">Save Score</button>
                 </div>
