@@ -27,18 +27,24 @@
 </head>
 
 <body>
-    <h1>Contact Us</h1>
-    <form onsubmit="return sendMail(this);">
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <br>
-        <input type="text" name="emailaddress" id="emailaddress" placeholder="Email" required>
-        <br>
-        <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
-        <br>
-        <button type="submit" id="sendBtn" class="btn nav-button">Send</button>
-    </form>
-    <a href="index.html" id="homeBtn"><i class="fas fa-home"></i></a>
+    
+    <div class="home-container">
+        <h1 id="formTitle">Contact Us</h1>
+        <p id="formCopy">We would love to hear form you if you have any sugestions on how we can improve this site.</p>
 
+        <div class="form-div">
+        <form onsubmit="return sendMail(this);">
+            <input type="text" name="name" class="form-element" id="name" placeholder="Name" required>
+            <br>
+            <input type="text" name="emailaddress" class="form-element" id="emailaddress" placeholder="Email" required>
+            <textarea name="message" class="form-element" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+            <br>
+            <button type="submit" id="sendBtn" class="btn nav-button">Send</button>
+            <a href="index.html" id="homeBtn" class="btn nav-button"><i class="fas fa-home"></i></a>
+        </form>
+        </div>
+        
+    </div>
 
     <footer>
         <div class="social-links">
