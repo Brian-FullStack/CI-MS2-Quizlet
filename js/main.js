@@ -386,3 +386,28 @@ function calculateScore() {
     }
 }
 document.getElementById('scoreBtn').onclick = calculateScore;
+
+/** create an object that sets the name as the value the user inputs into the 
+ name input and sets the score as the correct answer count
+ display the results in a div */
+ let username = document.getElementById('username');
+ let highScore = {
+     username: username.value,
+     score: quizGrade.innerText
+ };
+
+ localStorage.setItem("username", username.value);
+ localStorage.setItem("score",  Math.round( (correctCount/questionList.length)*100));
+
+ /**When the user saves their score they add it to an array of scores
+  
+  */
+ document.getElementById('saveScore').onclick = function(){
+     console.log(highScore);
+     localStorage.setItem("username", username.value);
+     localStorage.setItem("score",  Math.round( (correctCount/questionList.length)*100));
+ }
+
+ document.getElementById('highScoresBtn').onclick = function() {
+    document.querySelector('.high-score-modal-body').innerHTML = `${localStorage.getItem("username")} - ${localStorage.getItem("score")}`;
+ }
