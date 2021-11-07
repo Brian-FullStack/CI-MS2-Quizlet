@@ -198,16 +198,16 @@ label:hover{
 }
 
 /*Style the  result modal trigger and remove default styling*/
-#rulesBtn{
+#rulesBtn, #highScoresBtn{
     color: #fff;
     display: flex;
 }
 
-#rulesBtn span{
+#rulesBtn span, #highScoresBtn span{
     margin: 0 auto;
 }
 
-#rulesBtn:hover{
+#rulesBtn:hover, #highScoresBtn:hover{
     color: #48DEA8;
 }
 
