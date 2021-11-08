@@ -412,3 +412,8 @@ function saveHighScore() {
     window.location.assign('index.html');
 }
 saveScoreBtn.onclick = saveHighScore;
+
+let scoreBoard = document.getElementById('scoreBoard');
+scoreBoard.innerHTML = highScores.map(score => {
+    return `<li>${score.name} - ${score.score}%</li>`;
+}).join('');
