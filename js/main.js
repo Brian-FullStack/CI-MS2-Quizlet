@@ -387,27 +387,28 @@ function calculateScore() {
 }
 document.getElementById('scoreBtn').onclick = calculateScore;
 
-/** create an object that sets the name as the value the user inputs into the 
- name input and sets the score as the correct answer count
- display the results in a div */
- let username = document.getElementById('username');
- let highScore = {
-     username: username.value,
-     score: quizGrade.innerText
- };
+/** Saving users results to local storage using https://www.youtube.com/watch?v=DFhmNLKwwGw James Q Quick tutorial*/
+let username = document.getElementById('username');
+let saveScoreBtn = document.getElementById('saveScoreBtn');
+let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
- localStorage.setItem("username", username.value);
- localStorage.setItem("score",  Math.round( (correctCount/questionList.length)*100));
 
- /**When the user saves their score they add it to an array of scores
-  
-  */
- document.getElementById('saveScore').onclick = function(){
-     console.log(highScore);
-     localStorage.setItem("username", username.value);
-     localStorage.setItem("score",  Math.round( (correctCount/questionList.length)*100));
- }
+function saveHighScore() {
+    //An object used to store the users name and score
+    let score = {
+        score:  Math.round((correctCount / questionList.length) * 100),
+        name: username.value
+    };
 
- document.getElementById('highScoresBtn').onclick = function() {
-    document.querySelector('.high-score-modal-body').innerHTML = `${localStorage.getItem("username")} - ${localStorage.getItem("score")}`;
- }
+    /**Adds the score object to the highScores array
+     * sorts the array by highest score
+     * and shows only the first five items in that array
+    */
+    highScores.push(score);
+    highScores.sort((a, b) => b.score - a.score)
+    highScores.splice(5);
+
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('index.html');
+}
+saveScoreBtn.onclick = saveHighScore;
