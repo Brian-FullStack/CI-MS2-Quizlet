@@ -45,6 +45,7 @@ body{
 #playArrow:hover{
     color: #48DEA8;
     transition: 300ms;
+    transform: scale(1.25);
 }
 
 .nav-box{
@@ -67,13 +68,8 @@ body{
 .nav-button:hover{
     border-color: #48DEA8;
     color: #48DEA8;
-    transition: 300ms;
-    transform: scale(1.025);
-}
-
-.nav-button a {
-    text-decoration: none;
-    color: #fff;
+    transition: 200ms;
+    transform: scale(1.05);
 }
 
 /**********Quiz Page*******/
@@ -237,21 +233,6 @@ label:hover{
     border-radius: 5px 70px;
 }
 
-
-/*Footer social links*/
-.social-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    margin: 1em auto;
-}
-
-.social-links a{
-    color: #2E3A59;
-    font-size: 36px;
-}
-
 /*Contact Us Page*/
 #formTitle, #formCopy{
     text-align: center;
@@ -280,6 +261,26 @@ label:hover{
     align-items: center;
     margin: 0 auto;
     
+}
+
+/*Footer social links*/
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 1em auto;
+}
+
+.social-links a{
+    color: #2E3A59;
+    font-size: 36px;
+}
+
+.social-links a:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+    color: #48DEA8
 }
 
 /*Footer Copyright text*/
