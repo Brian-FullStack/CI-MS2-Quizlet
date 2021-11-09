@@ -16,7 +16,7 @@ body{
     width: 100%;
     background-color: #9471DF;
     border-radius: 0 120px;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 /*Start Box Style: border-radius 0 30px sets the top right and bottom right radius to 30px*/
@@ -68,6 +68,12 @@ body{
     border-color: #48DEA8;
     color: #48DEA8;
     transition: 300ms;
+    transform: scale(1.025);
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /**********Quiz Page*******/
@@ -199,22 +205,23 @@ label:hover{
 /*High Scores Modal*/
 #scoreBoard{
     list-style: none;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     padding-left: 1em;
 }
 
 /*Style the  result modal trigger and remove default styling*/
-#rulesBtn, #highScoresBtn{
+#rulesBtn, #highScoresBtn, #contactBtn{
     color: #fff;
     display: flex;
+    text-decoration: none;
 }
 
-#rulesBtn span, #highScoresBtn span{
+#rulesBtn span, #highScoresBtn span, #contactBtn span{
     margin: 0 auto;
 }
 
-#rulesBtn:hover, #highScoresBtn:hover{
+#rulesBtn:hover, #highScoresBtn:hover, #contactBtn:hover{
     color: #48DEA8;
 }
 
