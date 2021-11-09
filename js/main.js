@@ -265,6 +265,7 @@ document.getElementById('homeBtn').onclick = function () {
 /**
  * When the quiz is started display a question in the innerHTML of the head
  *  Display the possible quiz answers as radio button selections.
+ * When the last question is answered the scoreBtn is displayed
  */
 let question = document.getElementById('question');
 let homeBtn = document.getElementById('homeBtn');
@@ -273,7 +274,6 @@ let answerOption = document.querySelectorAll('.answerOption');
 
 function displayQuestion() {
     if (currentQuestion === questionList.length) {
-        console.log('Final Question')
         document.getElementById('scoreBtn').style.display = 'block';
     } else {
         for (let i = 0; i < questionList.length; i++) {
@@ -291,7 +291,7 @@ displayQuestion();
 //Display the question counter
 function questionNumber() {
     let questionCount = document.getElementById('questionCount');
-    questionCount.innerHTML = `Question ${currentQuestion + 1} of ${questionList.length}`;
+    questionCount.innerHTML = `Question ${currentQuestion} of ${questionList.length}`;
 }
 questionNumber();
 
@@ -360,6 +360,10 @@ document.getElementById('radioD').onclick = selectedAnswer;
             answerClicked = false;
         }
         clock.innerHTML = time;
+        //Stops the countdown
+        if (currentQuestion == questionList.length) {
+            clearInterval(countdownClock)
+        }
     }, 1000);
 }
 
