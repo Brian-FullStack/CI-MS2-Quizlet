@@ -342,19 +342,20 @@ document.getElementById('radioD').onclick = selectedAnswer;
  * and display the next question.
  * The timer should start at 20 for each new question
  */
- let time = 20;
- let clock = document.getElementById('timer');
- function countdown(){
+let time = 20;
+let clock = document.getElementById('timer');
+
+function countdown() {
     let countdownClock = setInterval(() => {
         time--;
-        if( time === 0){
+        if (time === 0) {
             wrongCount++;
             document.getElementById('wrong').innerHTML = wrongCount;
             currentQuestion++;
             displayQuestion();
             questionNumber();
             time = 20;
-        } else if(answerClicked){
+        } else if (answerClicked) {
             clearInterval(countdownClock);
             time = 20;
             answerClicked = false;
@@ -371,22 +372,23 @@ document.getElementById('radioD').onclick = selectedAnswer;
 /**Depending on what score the user got, a different message will be displayed*/
 let quizGrade = document.getElementById('quizGrade');
 let quizResult = document.getElementById('resultText');
+
 function calculateScore() {
-    if(correctCount === 30) {
+    if (correctCount === 30) {
         quizGrade.innerHTML = 'A+';
-        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) + '% Certified Hacker!! You know your stuff';
-    } else if(correctCount >= 25 ){
+        quizResult.innerHTML = 'You scored ' + Math.round((correctCount / questionList.length) * 100) + '% Certified Hacker!! You know your stuff';
+    } else if (correctCount >= 25) {
         quizGrade.innerHTML = 'A';
-        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% You know your stuff!!';
-    } else if(correctCount >= 20) {
+        quizResult.innerHTML = 'You scored ' + Math.round((correctCount / questionList.length) * 100) + '% You know your stuff!!';
+    } else if (correctCount >= 20) {
         quizGrade.innerHTML = 'B';
-        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% Nice Work!!';    
-    } else if(correctCount >= 15) {
+        quizResult.innerHTML = 'You scored ' + Math.round((correctCount / questionList.length) * 100) + '% Nice Work!!';
+    } else if (correctCount >= 15) {
         quizGrade.innerHTML = 'C';
-        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% You need to brush up on some stuff';        
-    } else if(correctCount < 10) {
+        quizResult.innerHTML = 'You scored ' + Math.round((correctCount / questionList.length) * 100) + '% You need to brush up on some stuff';
+    } else if (correctCount < 10) {
         quizGrade.innerHTML = 'D';
-        quizResult.innerHTML = 'You scored ' + Math.round( (correctCount/questionList.length)*100) +'% Do you even code?!! :/';    
+        quizResult.innerHTML = 'You scored ' + Math.round((correctCount / questionList.length) * 100) + '% Do you even code?!! :/';
     }
 }
 document.getElementById('scoreBtn').onclick = calculateScore;
@@ -400,13 +402,13 @@ let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 function saveHighScore() {
     //An object used to store the users name and score
     let score = {
-        score:  Math.round((correctCount / questionList.length) * 100),
+        score: Math.round((correctCount / questionList.length) * 100),
         name: username.value
     };
     /**Adds the score object to the highScores array
      * sorts the array by highest score
      * and shows only the first five items in that array
-    */
+     */
     highScores.push(score);
     highScores.sort((a, b) => b.score - a.score)
     highScores.splice(5);
@@ -414,7 +416,7 @@ function saveHighScore() {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('index.html');
 }
-saveScoreBtn.onclick = function(){
+saveScoreBtn.onclick = function () {
     saveHighScore();
     saveScoreBtn.style.backgroundColor = "#48DEA8";
     saveScoreBtn.innerHTML = "Saved";
