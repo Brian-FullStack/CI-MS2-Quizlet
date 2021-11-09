@@ -272,10 +272,18 @@ label:hover {
     width: 100%;
     padding: 1em;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
 
+#sendBtn {
+    width: 40%;
+}
+
+#formHomeBtn {
+    float: right;
+    width: 40%;
 }
 
 /*Footer Social Links and Copyright text*/
