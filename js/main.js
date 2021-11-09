@@ -399,7 +399,6 @@ function saveHighScore() {
         score:  Math.round((correctCount / questionList.length) * 100),
         name: username.value
     };
-
     /**Adds the score object to the highScores array
      * sorts the array by highest score
      * and shows only the first five items in that array
@@ -411,7 +410,11 @@ function saveHighScore() {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('index.html');
 }
-saveScoreBtn.onclick = saveHighScore;
+saveScoreBtn.onclick = function(){
+    saveHighScore();
+    saveScoreBtn.style.backgroundColor = "#48DEA8";
+    saveScoreBtn.innerHTML = "Saved";
+}
 
 let scoreBoard = document.getElementById('scoreBoard');
 scoreBoard.innerHTML = highScores.map(score => {
