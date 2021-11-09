@@ -153,7 +153,7 @@ label:hover{
     margin-left: 1em;
 }
 
-#homeBtn, #scoreBtn{
+#homeBtn, #scoreBtn, #saveScoreBtn{
     background-color: #9471DF;
     padding: 5px 10px;
     border: 1px solid #fff;
@@ -165,7 +165,7 @@ label:hover{
     box-shadow: 0px 2px 15px #2E3A59;
 }
 
-#scoreBtn:hover, #homeBtn:hover, #saveScore:hover{
+#scoreBtn:hover, #homeBtn:hover, #saveScoreBtn:hover{
     border-color: #48DEA8;
     color: #48DEA8;
     transition: 300ms;
@@ -263,7 +263,7 @@ label:hover{
     
 }
 
-/*Footer social links*/
+/*Footer Social Links and Copyright text*/
 .social-links{
     display: flex;
     justify-content: space-between;
@@ -283,7 +283,6 @@ label:hover{
     color: #48DEA8
 }
 
-/*Footer Copyright text*/
 .copyright{
     text-align: center;
     font-size: 12px;
