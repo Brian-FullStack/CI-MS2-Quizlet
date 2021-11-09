@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="home-container" id="homeScreen" >
+    <div class="home-container" id="homeScreen">
         <div class="start-box">
             <span id="startTitle">Start Quiz</span>
             <br>
@@ -30,6 +30,7 @@
                 data-bs-target="#exampleModal">
                 <span>Rules</span>
             </button>
+            <!-- High Scores Button trigger modal -->
             <button type="button" class="nav-button" id="highScoresBtn" data-bs-toggle="modal"
                 data-bs-target="#highScoreModal">
                 <span>High Score</span>
@@ -41,57 +42,58 @@
     </div>
 
     <div id="quizPage" style="display: none;">
-    <div class="quiz-container">
-        <h1 id="question">Question</h1>
-    </div>
-
-    <div class="right-wrong-timer">
-        <div>
-            <span id="correct">0</span>
-            <i class="fas fa-check" id="check"></i>
+        <div class="quiz-container">
+            <h1 id="question">Question</h1>
         </div>
-        <div id="timer">20</div>
-        <div>
-            <span id="wrong">0</span>
-            <i class="fas fa-times" id="times"></i>
+
+        <div class="right-wrong-timer">
+            <div>
+                <span id="correct">0</span>
+                <i class="fas fa-check" id="check"></i>
+            </div>
+            <div id="timer">20</div>
+            <div>
+                <span id="wrong">0</span>
+                <i class="fas fa-times" id="times"></i>
+            </div>
+        </div>
+
+        <div class="possible-answers">
+            <!--Input is wrapped in a label tag to increase useability-->
+            <label>
+                <input type="radio" name="ans" id="radioA" value="A" required>
+                <span class="answerOption" id="answerA">Answer 1</span>
+            </label>
+            <label>
+                <input type="radio" name="ans" id="radioB" value="B" required>
+                <span class="answerOption" id="answerB">Answer 2</span>
+            </label>
+            <label>
+                <input type="radio" name="ans" id="radioC" value="C" required>
+                <span class="answerOption" id="answerC">Answer 3</span>
+            </label>
+            <label>
+                <input type="radio" name="ans" id="radioD" value="D" required>
+                <span class="answerOption" id="answerD">Answer 4</span>
+            </label>
+        </div>
+
+        <div class="progress-area">
+            <span id="questionCount"></span>
+            <a href="index.html" id="homeBtn"><i class="fas fa-home"></i></a>
+            <!-- Score Results Button trigger modal -->
+            <button type="button" id="scoreBtn" data-bs-toggle="modal" data-bs-target="#resultsModal"
+                style="display: none;">
+                <span>Score</span>
+            </button>
         </div>
     </div>
 
-    <div class="possible-answers">
-        <!--Input is wrapped in a label tag to increase useability-->
-        <label>
-            <input type="radio" name="ans" id="radioA" value="A" required>
-            <span class="answerOption" id="answerA">Answer 1</span>
-        </label>
-        <label>
-            <input type="radio" name="ans" id="radioB" value="B" required>
-            <span class="answerOption" id="answerB">Answer 2</span>
-        </label>
-        <label>
-            <input type="radio" name="ans" id="radioC" value="C" required>
-            <span class="answerOption" id="answerC">Answer 3</span>
-        </label>
-        <label>
-            <input type="radio" name="ans" id="radioD" value="D" required>
-            <span class="answerOption" id="answerD">Answer 4</span>
-        </label>
-    </div>
-
-    <div class="progress-area">
-        <span id="questionCount"></span>
-        <a href="index.html" id="homeBtn"><i class="fas fa-home"></i></a>
-        <!-- Score Results Button trigger modal -->
-        <button type="button" id="scoreBtn" data-bs-toggle="modal"
-        data-bs-target="#resultsModal" style="display: none;">
-        <span>Score</span>
-    </button>
-    </div>
-
-    </div>
     <footer>
         <div class="social-links">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://github.com/Brian-FullStack/CI-MS2-Quizlet" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Brian-FullStack/CI-MS2-Quizlet" target="_blank"><i
+                    class="fab fa-github"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
@@ -101,6 +103,7 @@
         </div>
     </footer>
 
+    <!-- All modals were created using Bootstrap 5.1 -->
     <!--Rules Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -150,7 +153,7 @@
                 </div>
                 <div class="score-modal-body">
                     <span id="resultText"></span>
-                    <input type="text" id="username" autocomplete="off" placeholder="Name" required>
+                    <input type="text" id="username" autocomplete="off" placeholder="Name">
                     <br>
                     <button type="submit" id="saveScoreBtn">Save Score</button>
                 </div>
