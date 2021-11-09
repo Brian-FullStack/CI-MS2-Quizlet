@@ -157,7 +157,8 @@ label:hover {
 
 #homeBtn,
 #scoreBtn,
-#saveScoreBtn {
+#saveScoreBtn,
+.close-Btn {
     background-color: #9471DF;
     padding: 5px 10px;
     border: 1px solid #fff;
@@ -166,12 +167,13 @@ label:hover {
     margin-right: 2em;
     color: #fff;
     cursor: pointer;
-    box-shadow: 0px 2px 15px #2E3A59;
+    box-shadow: 0px 2px 8px #9471DF;
 }
 
 #scoreBtn:hover,
 #homeBtn:hover,
-#saveScoreBtn:hover {
+#saveScoreBtn:hover,
+.close-Btn:hover {
     border-color: #48DEA8;
     color: #48DEA8;
     transition: 300ms;
@@ -194,15 +196,8 @@ label:hover {
     font-size: 18px;
 }
 
-#saveScore {
-    background-color: #9471DF;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+#saveScoreBtn {
     margin: 10px auto;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0px 2px 15px #2E3A59;
 }
 
 /*High Scores Modal*/
