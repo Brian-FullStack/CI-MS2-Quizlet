@@ -1,14 +1,17 @@
 # CI-MS2-Quizlet
-Quizlet is a quiz game to test students kowledge in HTML, CSS and JavaScript
-https://brian-fullstack.github.io/CI-MS2-Quizlet/
+[Live Site](https://brian-fullstack.github.io/CI-MS2-Quizlet/)
 
 # Introduction
+Quizlet is an interactive quiz which tests users knowledge if the three Frontend Development languages. HTML, CSS and Javascript. Quiz challenges users to beat their high scores by answering each question correctly before time runs out.
 
 # UX
-
 ## Scope
-
+The main purpose of this site is to help users establish where the gaps in their knowledge are, in terms of frontend fundamentals. By giving the users an option of saving their score it may entice users to return to the site to better their previous score.
 ## Site Demographic
+- Beginners in HTML, CSS and JavaScript
+- Self taught programmers
+- Programmers who want to test their knowledge of these languages
+- People who want to solidify the knowledge that they already have
 
 # User Stories
 ## User Requirements
