@@ -7,6 +7,7 @@ Quizlet is an interactive quiz which tests users knowledge if the three Frontend
 # UX
 ## Scope
 The main purpose of this site is to help users establish where the gaps in their knowledge are, in terms of frontend fundamentals. By giving the users an option of saving their score it may entice users to return to the site to better their previous score.
+
 ## Site Demographic
 - Beginners in HTML, CSS and JavaScript
 - Self taught programmers
@@ -15,7 +16,18 @@ The main purpose of this site is to help users establish where the gaps in their
 
 # User Stories
 ## User Requirements
+
 ## User Goals
+1. As a user I want to easily navigate throught the site.
+2. As a user I want to know how the quiz works before I start playing.
+3. As a user I want to know how many questions I got right or wrong.
+4. As a user I want to be able to tell how many questions are left.
+5. As a user I want to be able to exit the quiz whenever I want.
+6. As a user I want to know my score when I finish the quiz.
+7. As a user I want to save my score.
+8. As a user I want to be able to see my past scores.
+9. As a user I want to be able to contact the site owner.
+10. As a user I want to be able to use this site on all my devices.
 
 ## Site Owner Reqiurements
 ## Site Owner Goals
