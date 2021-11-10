@@ -16,8 +16,8 @@ The main purpose of this site is to help users establish where the gaps in their
 
 # User Stories
 ## User Goals
-|   |   |   |
-|---|---|---|
+|   |   |
+|---|---|
 |1.| As a user I want to easily navigate throught the site.|
 |2.| As a user I want to know how the quiz works before I start playing.|
 |3.| As a user I want to know how many questions I got right or wrong.|
@@ -29,8 +29,15 @@ The main purpose of this site is to help users establish where the gaps in their
 |9.| As a user I want to be able to contact the site owner.|
 |10.| As a user I want to be able to use this site on all my devices.|
 
-## Site Owner Reqiurements
 ## Site Owner Goals
+|   |   |
+|---|---|
+|1.| As a site owner I want a responsive site.
+|2.| As a site owner I want each question to be timed.
+|3.| As a site owner I want a way to be contacted by users.
+|4.| As a site owner I want to be notified about any contact from the site.
+|5.| As a site owner I want users to be able to check out my social media pages.
+|6.| As a site owner I want the site to be easy and intuituve to use.
 
 # Design
 
