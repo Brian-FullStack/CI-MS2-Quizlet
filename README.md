@@ -42,6 +42,20 @@ The main purpose of this site is to help users establish where the gaps in their
 # Design
 
 ## Structure
+- Quizlet is a multi-page site consisting of three pages and three modals.
+    - Home Page
+    - Quiz Page
+    - Contact Page
+    - Rules Modal
+    - High Scores Modal
+    - Results Modal
+- Each page will share a common footer.
+- The Home Page is where users can navigate to all other pages,read the rules and see the scoreboard.
+- The Quiz Page will display the quiz questions and answers, the countdown clock, the score and progress as well as a button to exit the quiz.
+-  The Contact Page is where users can send send a message to the site owner if needed.
+The Rules Modal is triggered from the Home Page and shows a list of rules and a button to close.
+- The High Scores Modal is also triggered from the Home Page and displays the high scores and a button to close.
+- The Results Modal is triggered by a button only displayed when the last question has been asnwered on the Quiz Page.
 
 ## Colours
 
