@@ -58,6 +58,15 @@ The Rules Modal is triggered from the Home Page and shows a list of rules and a 
 - The Results Modal is triggered by a button only displayed when the last question has been asnwered on the Quiz Page.
 
 ## Colours
+The colors used throughout this site are simple and selected not to be a distraction to the users while they answer the questions.
+
+| Color Use  | HEX Code  | Color  |
+|------------|-----------|--------|
+|Containers, Buttons & Text | #9471DF | ![#9471DF](https://via.placeholder.com/15/9471DF/000000?text=+) |
+|Social Icons, Timer & Count | #2E3A59 | ![#2E3A59](https://via.placeholder.com/15/2E3A59/000000?text=+) |
+|Hover Effects & Correct Icon | #48DEA8 | ![#48DEA8](https://via.placeholder.com/15/48DEA8/000000?text=+) |
+|Incorrect Icon | #CD4115 | ![#CD4115](https://via.placeholder.com/15/CD4115/000000?text=+) |
+|Background and Text | #FFFFFF | ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) |
 
 ## Wireframes
 
