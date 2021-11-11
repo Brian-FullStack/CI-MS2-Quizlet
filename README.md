@@ -79,17 +79,82 @@ The wireframes for this site were made using [Figma](https://www.figma.com/). Hi
 
 # Features
 
-## Feature 1
-### The user stories that this feature covers are:
+## Feature 1 - Home Page
+The Home Page is where users can easially navigate throught the site.
+### Start Quiz
+- This is the main call to action. Positioned at the top of the page this simply calls the user to start the quiz by clicking the play arrow.
+#### Navigation Buttons
+- These are used as a very clear way for the users to navigate throughout the site. Added hover effects make it clear to the user that the buttons bring them somewhere or reveal some information.
+#### Rules Modal
+- Implemented using [Bootstrap](https://getbootstrap.com/) this modal gives users a list of instructions on how the quiz works.
+#### High Score Modal
+- Implemented using [Bootstrap](https://getbootstrap.com/) this modal gives users a list of past high scores. The scores are arranged from highest to lowest.
+#### Contact Button
+- Users can access the contact page if they wish to get in contact with the site owner.
+## The user/site owner goals that this feature covers are:
+|   |   |
+|---|---|
+|1.| As a user I want to easily navigate throught the site.|
+|2.| As a user I want to know how the quiz works before I start playing.|
+|8.| As a user I want to be able to see my past scores.|
+|6.| As a site owner I want the site to be easy and intuituve to use.
+___
+## Feature 2 - Quiz Page
+The Quiz Page has six different componants and is the busiest page on the site.
+#### Question Container
+- Displays the current question. I made the container the same colour and shape as the Home page which adds continuity across the site.
+#### Countdown Timer
+- Adds an element of pressure to the user. The timer is designed to increment the wrong answer count and move on to the next question if the user doesn't answer the question in time.
+#### Right and Wrong Counters
+- These are used to show the user exactly how many questions they got right or wrong.
+#### Answer Selection
+- Displays one right and three wrong answers for the user to choose from.
+#### Question Counter
+- Shows users which question they are on and lets them be aware of how many questions are left in the quiz.
+#### Home Button
+- When users click the Home Button before the end of the quiz, progress will be lost and users will have to start the quiz from the start again.
+- The Home Button features on both the Quiz Page and Contact Page, it is used to give a sense of security to users by letting them find their way back to the Home Page. 
+## The user/site owner goals that this feature covers are:
+|   |   |
+|---|---|
+|3.| As a user I want to know how many questions I got right or wrong.|
+|4.| As a user I want to be able to tell how many questions are left.|
+|5.| As a user I want to be able to exit the quiz whenever I want.|
+|2.| As a site owner I want each question to be timed.
+___
+## Feature 3 - Save Score Modal
+The trigger for the Save Score Modal is only displayed once the final question of the quiz has been answered.
+#### Quiz Grade
+- The user is given a grade of A,B,C..etc.
+- The users score is calculated and they are given a percentage and a different message depending on what percentage they scored.
+#### Username
+- Useres are promped to save their score and username by an input box.
+- If users have a top score their score will be saved and added to the scoreboard
+## The user/site owner goals that this feature covers are:
+|   |   |
+|---|---|
+|6.| As a user I want to know my score when I finish the quiz.|
+|7.| As a user I want to save my score.|
 
-## Feature 2
-### The user stories that this feature covers are:
+## Feature 4 - Contact Page
+#### Form
+- [Email.JS](https://www.emailjs.com/) API is used to handle emails sent to the site owner.
+- Users are given validation that their email has been sent when the 'Send' button turns green and displays 'Sent'.
+- The site owner gets a prompt in their email inbox that a message has been sent from the site form. They are given the users Username, email and the message. 
+## The user/site owner goals that this feature covers are:
+|   |   |
+|---|---|
+|9.| As a user I want to be able to contact the site owner.|
+|3.| As a site owner I want a way to be contacted by users.
+|4.| As a site owner I want to be notified about any contact from the site.
 
-## Feature 3
-### The user stories that this feature covers are:
-
-## Feature 4
-### The user stories that this feature covers are:
+## Feature 5 - Footer
+This is a common feature that is displayed throughout the site. It allows users to contact the site owner via social media.
+## The user/site owner goals that this feature covers are:
+|   |   |
+|---|---|
+|5.| As a site owner I want users to be able to check out my social media pages.
+|   |   |
 
 ## Features for future releases
 
