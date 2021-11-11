@@ -69,6 +69,13 @@ The colors used throughout this site are simple and selected not to be a distrac
 |Background and Text | #FFFFFF | ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) |
 
 ## Wireframes
+The wireframes for this site were made using [Figma](https://www.figma.com/). High fidelity mockups for the most common screen sizes can be found here.
+
+[Mobile](doc/wireframes/mobile-figma-wireframes.jpg)
+
+[Tablet](doc/wireframes/tablet-figma-wireframes.jpg)
+
+[Desktop](doc/wireframes/desktop-figma-wireframes.jpg)
 
 # Features
 
