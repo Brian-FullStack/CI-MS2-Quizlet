@@ -85,10 +85,13 @@ The Home Page is where users can easially navigate throught the site.
 - This is the main call to action. Positioned at the top of the page this simply calls the user to start the quiz by clicking the play arrow.
 #### Navigation Buttons
 - These are used as a very clear way for the users to navigate throughout the site. Added hover effects make it clear to the user that the buttons bring them somewhere or reveal some information.
+![Image Here](doc/features/homescreen-hover.jpg)
 #### Rules Modal
 - Implemented using [Bootstrap](https://getbootstrap.com/) this modal gives users a list of instructions on how the quiz works.
+
 #### High Score Modal
 - Implemented using [Bootstrap](https://getbootstrap.com/) this modal gives users a list of past high scores. The scores are arranged from highest to lowest.
+![Image Here](doc/features/high-score-modal.jpg)
 #### Contact Button
 - Users can access the contact page if they wish to get in contact with the site owner.
 ## The user/site owner goals that this feature covers are:
@@ -101,6 +104,7 @@ The Home Page is where users can easially navigate throught the site.
 ___
 ## Feature 2 - Quiz Page
 The Quiz Page has six different componants and is the busiest page on the site.
+![Image Here](doc/features/quiz-page.jpg)
 #### Question Container
 - Displays the current question. I made the container the same colour and shape as the Home page which adds continuity across the site.
 #### Countdown Timer
@@ -124,32 +128,39 @@ The Quiz Page has six different componants and is the busiest page on the site.
 ___
 ## Feature 3 - Save Score Modal
 The trigger for the Save Score Modal is only displayed once the final question of the quiz has been answered.
+![Image Here](doc/features/last-question-page.jpg)
 #### Quiz Grade
 - The user is given a grade of A,B,C..etc.
 - The users score is calculated and they are given a percentage and a different message depending on what percentage they scored.
 #### Username
 - Useres are promped to save their score and username by an input box.
 - If users have a top score their score will be saved and added to the scoreboard
+![Image Here](doc/features/save-score-modal.jpg)
 ## The user/site owner goals that this feature covers are:
 |   |   |
 |---|---|
 |6.| As a user I want to know my score when I finish the quiz.|
 |7.| As a user I want to save my score.|
-
+___
 ## Feature 4 - Contact Page
+![Image Here](doc/features/contact-page.jpg)
 #### Form
 - [Email.JS](https://www.emailjs.com/) API is used to handle emails sent to the site owner.
 - Users are given validation that their email has been sent when the 'Send' button turns green and displays 'Sent'.
+![Image Here](doc/features/message-sent.jpg)
 - The site owner gets a prompt in their email inbox that a message has been sent from the site form. They are given the users Username, email and the message. 
+![Image Here](doc/features/email-inbox.jpg)
+![Image Here](doc/features/test-email.jpg)
 ## The user/site owner goals that this feature covers are:
 |   |   |
 |---|---|
 |9.| As a user I want to be able to contact the site owner.|
 |3.| As a site owner I want a way to be contacted by users.
 |4.| As a site owner I want to be notified about any contact from the site.
-
+____
 ## Feature 5 - Footer
 This is a common feature that is displayed throughout the site. It allows users to contact the site owner via social media.
+![Image Here](doc/features/footer.jpg)
 ## The user/site owner goals that this feature covers are:
 |   |   |
 |---|---|
