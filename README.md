@@ -260,7 +260,20 @@ __
 
 ### HTML Validation
 
+I used [W3C Validator](https://validator.w3.org/nu/) to validate the HTML on all pages and ensure that there were no syntax errors.
+- Home page passed with 0 errors. 
+
+[Results](doc/testing/home-page-validation.jpg) 
+
+- Contact Page passed with 0 errors.
+
+[Results](doc/testing/contact-page-validation.jpg)
+
 ### CSS Validation
+I used [W3C Validator](https://validator.w3.org/nu/) to validate the CSS to ensure that there were no syntax errors.
+- CSS passed with 0 errors.
+
+[Results](doc/testing/css-validation.jpg)
 
 ### JS Validation
 
