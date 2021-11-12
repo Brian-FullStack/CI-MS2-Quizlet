@@ -170,8 +170,11 @@ This is a common feature that is displayed throughout the site. It allows users 
 ## Features for future releases
 
 # Languages, Frameworks and Technologies Used
+### Languages
+- [HTML](https://html.com/) is used to make up the structure of this site and add copy.
+- [CSS](https://css-tricks.com/) used to add styling throughout the site.
+- [JavaScript](https://www.javascript.com/) used to add interactivity to the sites features. Control the timing and to calculate the scores.
 
-# Testing
 
 ## Testing User Stories
 __
