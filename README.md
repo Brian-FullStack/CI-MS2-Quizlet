@@ -170,11 +170,23 @@ This is a common feature that is displayed throughout the site. It allows users 
 ## Features for future releases
 
 # Languages, Frameworks and Technologies Used
-### Languages
+
 - [HTML](https://html.com/) is used to make up the structure of this site and add copy.
 - [CSS](https://css-tricks.com/) used to add styling throughout the site.
 - [JavaScript](https://www.javascript.com/) used to add interactivity to the sites features. Control the timing and to calculate the scores.
-
+- [Bootstrap 5](https://getbootstrap.com/) is used for implementing the modals.
+- [JQuery](https://jquery.com/) came with Bootstrap in order to add functionality to the modals.
+- [Email.JS](https://www.emailjs.com/) is used to add functionality to the forms without the need for backend.
+- [Font Awsome](https://fontawesome.com/) is used for adding icons throughout this site.
+- [Coolors](https://coolors.co/) is where I got inspiration for the colors on this site.
+- [GitHub](https://github.com/) is used as a remote repository for this project.
+- [Git](https://git-scm.com/) is used for version control by commiting and pushing changes to GitHub.
+- [Visual Studio Code](https://code.visualstudio.com/) is the IDE I used for writing the code.
+- [Figma](https://www.figma.com/) was where I created all wireframes for this site.
+- [Am I Responsive](http://ami.responsivedesign.is/#) is used for creating the image at the top and to check for responsiveness.
+- [Firefox Dev Tools](https://developer.mozilla.org/en-US/docs/Tools) was used to test for responsiveness and to help with debugging as this site was being developed.
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test the performance of this site.
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) is a VSCode extension I used to keep the code clean throughout. 
 
 ## Testing User Stories
 __
