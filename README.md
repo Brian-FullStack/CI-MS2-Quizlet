@@ -293,6 +293,13 @@ For mobile I scored:
 
 [Results](doc/testing/lighthouse-report-mobile.jpg)
 ### Responsiveness
+Throughout this project I used Firefox Dev Tools to see how responsive the site was as I built it.
+Once I deployed the project I used all devices available to me to see how the site worked on each one.
+The devices included:
+- Lenovo Ideapad C340
+- Huawei P30 Pro
+- iPad
+- iPhone 8+
 
 # Bugs in Development
 Bug -
