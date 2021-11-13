@@ -191,7 +191,23 @@ This is a common feature that is displayed throughout the site. It allows users 
 ## Testing User Stories
 __
 
-1.
+|1.| As a user I want to easily navigate throught the site.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|Home Page|The user can access each page from the home page and can navigate back using the Home button |I expect that he clear navigation buttons on the home page and the use of the home button on every page allow the user to easily navigate to eact page |Worked as expected|
+
+[See image result Here](url)
+__
+
+|2.| As a user I want to know how the quiz works before I start playing.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|   |        |                 |                |
+
+[See image result Here](url)
+__
+
+|3.| As a user I want to know how many questions I got right or wrong.|
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -199,7 +215,7 @@ __
 [See image result Here](url)
 __
 
-2.
+|4.| As a user I want to be able to tell how many questions are left.|
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -207,7 +223,7 @@ __
 [See image result Here](url)
 __
 
-3.
+|5.| As a user I want to be able to exit the quiz whenever I want.|
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -215,7 +231,39 @@ __
 [See image result Here](url)
 __
 
-4.
+|6.| As a user I want to know my score when I finish the quiz.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|7.| As a user I want to save my score.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|8.| As a user I want to be able to see my past scores.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|9.| As a user I want to be able to contact the site owner.|
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|10.| As a user I want to be able to use this site on all my devices.|
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -226,7 +274,7 @@ __
 ## Testing Site Owner Goals
 __
 
-1.
+|1.| As a site owner I want a responsive site.
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -234,7 +282,7 @@ __
 [See image result Here](url)
 __
 
-2.
+|2.| As a site owner I want each question to be timed.
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -242,7 +290,7 @@ __
 [See image result Here](url)
 __
 
-3.
+|3.| As a site owner I want a way to be contacted by users.
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
@@ -250,7 +298,23 @@ __
 [See image result Here](url)
 __
 
-4.
+|4.| As a site owner I want to be notified about any contact from the site.
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|5.| As a site owner I want users to be able to check out my social media pages.
+| Feature | Action | Expected Result |  Actual Result |
+|---------|--------|-----------------|----------------|
+|         |        |                 |                |
+
+[See image result Here](url)
+__
+
+|6.| As a site owner I want the site to be easy and intuituve to use.
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |         |        |                 |                |
