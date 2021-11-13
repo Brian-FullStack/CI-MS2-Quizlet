@@ -275,10 +275,23 @@ I used [W3C Validator](https://validator.w3.org/nu/) to validate the CSS to ensu
 
 [Results](doc/testing/css-validation.jpg)
 
-### JS Validation
-
 ### Lighthouse Testing
+I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) to test the website Performance, Acessability, Best Practices and SEO.
+For desktop I scored:
+- Performance - 93%
+- Acessability - 91%
+- Best Practices - 93%
+- SEO - 100%
 
+[Results](doc/testing/lighthouse-report.jpg)
+
+For mobile I scored:
+- Performance - 90%
+- Acessability - 91%
+- Best Practices - 93%
+- SEO - 100%
+
+[Results](doc/testing/lighthouse-report-mobile.jpg)
 ### Responsiveness
 
 # Bugs in Development
