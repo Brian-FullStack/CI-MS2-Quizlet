@@ -312,5 +312,29 @@ Bug -
 Fix -
 
 # Deployment
+### Git Hub Pages
+I deployed this website using GitHub pages. The process I used is as follows:
+1. I logged into my Github account and selected my MS1 project from my repositories.
+2. I clicked on 'Settings' in the repository.
+3. In the menu on the left i clicked on 'Pages'.
+4. I then clicked on 'Source'.
+5. I clicked on the dropdown menu that said 'None' and then selected 'Main'.
+6. After the page reloaded I clicked on the link to the deployed site.
+
+### Forking this GitHub Repository
+Follow these steps to fork the GitHub Repository
+1. Log into GitHub and find the repository.
+2. Click the 'Fork' button located in the top right of the page.
+3. This will make a copy of the repository on your own GitHub account.
+
+### Clone this Repository
+ To make a local clone of this repository follow these steps:
+ 1. Log into GitHub and find the repository.
+ 2. Click on the 'Code' button.
+ 3. To clone the repository using HTTPS, copy the url.
+ 4. Open Git and change the current working directory to where you want the cloned directory to be made.
+ 5. In the terminal type 'git clone' followed by the https url.
+ 6. Press enter
+ 7. The local clone will be created.
 
 # Credits
