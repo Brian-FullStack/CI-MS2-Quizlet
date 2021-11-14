@@ -284,58 +284,65 @@ ___
 |---------|--------|-----------------|----------------|
 |Responsiveness|Users can change the size of their browser window or open the site on a different device|When the user opens this site on a different device the site will still function perfectly|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/am-i-responsive.jpg)
+___
 
 ## Testing Site Owner Goals
-__
 
-|1.| As a site owner I want a responsive site.
+1. *As a site owner I want a responsive site.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Responsiveness|Site Owner can change the size of their browser window or open the site on a different device|When the site owner opens this site on a different device the site will still function perfectly|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/am-i-responsive.jpg)
+___
 
-|2.| As a site owner I want each question to be timed.
+2. *As a site owner I want each question to be timed.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Countdown Timer|See the countdown timer in the quiz page|The countdown timer will give the users 20 seconds to answer the question. If they fail to do so then they will have got the answer wrong.|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/countdown-timer.jpg)
+___
 
-|3.| As a site owner I want a way to be contacted by users.
+3. *As a site owner I want a way to be contacted by users.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Contact Page|Click on the contact button and fill out the form and click Send|When users send a message the site owner will recieve that message in their email inbox|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/contact-page.jpg)
+___
 
-|4.| As a site owner I want to be notified about any contact from the site.
+4. *As a site owner I want to be notified about any contact from the site.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|[Email.JS](https://www.emailjs.com/)|When a message is sent from the site the site owner will recieve a notification their inbox|That the site the site owner will recieve a notification their inbox|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/email-inbox.jpg)
+![See image result Here](doc/testing/test-email.jpg)
+___
 
-|5.| As a site owner I want users to be able to check out my social media pages.
+5. *As a site owner I want users to be able to check out my social media pages.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Footer|Scroll down to the bottom of the page|When users click the social media icons they will be brought to the site owners social media pages |Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/features/footer.jpg)
+___
 
-|6.| As a site owner I want the site to be easy and intuituve to use.
+6. *As a site owner I want the site to be easy and intuituve to use.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Navigation buttons and Home button|The user only needs one click to reach any of the pages in the site|The use of a simple design and layout along with hover effects and continuity across the site will allow this site to be easially navigated|Worked as expected|
 
-[See image result Here](url)
+![See image result Here](doc/testing/nav-buttons.jpg)
+![See image result Here](doc/testing/home-button.jpg)
 __
 
 ### HTML Validation
