@@ -391,21 +391,46 @@ The devices included:
 - iPhone 8+
 
 # Bugs in Development
-Bug -
+Bug - Countdown Timer not stopping when the last question was answered.
 
-Fix -
+- Fix - Added an IF statement if the current question count is the same as the length of the questionList to clearInterval(countdownClock).
+```javascript
+if (currentQuestion == questionList.length) {
+            clearInterval(countdownClock);
+        }
+```
 
-Bug -
 
-Fix -
+Bug - When the home button was clicked to quit the quiz before the quiz was completed the quiz didn't reset.
 
-Bug -
+- Fix - I made the Home button into a hyperlink and directed it to index.html. This worked.
+```html
+<a href="index.html" id="homeBtn"><i class="fas fa-home"></i></a>
+```
 
-Fix -
+Bug - When a new question was displayed the timer kept counting down whatever was left on the last questions timer AND start counting down from 20 on the new question. Multiple timers conting down at the same time.
 
-Bug -
+- Fix - I fixed this creating a new variable and gave it a value of false.
+```javascript
+let answerClicked = false;
+```
+When the user selected an answer the value of that variable returned true.
 
-Fix -
+I then used an IF statement in the countdown function that said if answerClicked variable returned true then stop the countdown clock, reset the time to 20 and reset the answerClicked variable to false.
+```javascript
+if (answerClicked) {
+            clearInterval(countdownClock);
+            time = 20;
+            answerClicked = false;
+        }
+```
+
+Bug - The "<>" did not display in the questions and answers.
+
+Fix - I found a fix to this on stack overflow which was to add "&lt" and "&gt" in place of the "<>" 
+```javascript
+d: '&lt!--this is a comment--&gt;',
+```
 
 # Deployment
 ### Git Hub Pages
