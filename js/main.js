@@ -268,7 +268,6 @@ document.getElementById('homeBtn').onclick = function () {
  * When the last question is answered the scoreBtn is displayed
  */
 let question = document.getElementById('question');
-let homeBtn = document.getElementById('homeBtn');
 let currentQuestion = 0;
 let answerOption = document.querySelectorAll('.answerOption');
 
