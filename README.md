@@ -1,4 +1,5 @@
 # CI-MS2-Quizlet
+![Device Responsiveness](doc/testing/am-i-responsive.jpg)
 [Live Site](https://brian-fullstack.github.io/CI-MS2-Quizlet/)
 
 # Introduction
@@ -427,7 +428,7 @@ if (answerClicked) {
 
 Bug - The "<>" did not display in the questions and answers.
 
-Fix - I found a fix to this on stack overflow which was to add "&lt" and "&gt" in place of the "<>" 
+- Fix - I found a fix to this on stack overflow which was to add "&lt" and "&gt" in place of the "<>" 
 ```javascript
 d: '&lt!--this is a comment--&gt;',
 ```
