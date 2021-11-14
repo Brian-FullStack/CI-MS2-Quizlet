@@ -285,6 +285,7 @@ ___
 |Responsiveness|Users can change the size of their browser window or open the site on a different device|When the user opens this site on a different device the site will still function perfectly|Worked as expected|
 
 ![See image result Here](doc/testing/am-i-responsive.jpg)
+*{ Although the mobile screen doesn't appear responsive in the image above, I have tested this site on multiple mobile devices and the issue above has not been present. This has also been confirmed to me by CI slack community members who tested the site for responsiveness and they have not found this issue. }*
 ___
 
 ## Testing Site Owner Goals
@@ -296,6 +297,7 @@ ___
 |Responsiveness|Site Owner can change the size of their browser window or open the site on a different device|When the site owner opens this site on a different device the site will still function perfectly|Worked as expected|
 
 ![See image result Here](doc/testing/am-i-responsive.jpg)
+*{ Although the mobile screen doesn't appear responsive in the image above, I have tested this site on multiple mobile devices and both Firefox and Chrome Dev Tools and the issue above has not been present. This has also been confirmed to me by CI slack community members who have tested this for me and they have not found this issue. }*
 ___
 
 2. *As a site owner I want each question to be timed.*
