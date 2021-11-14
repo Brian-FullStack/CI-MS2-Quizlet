@@ -128,7 +128,7 @@ let questionList = [{
         answer: 'D'
     },
     {
-        question: 'What is the correct CSS syntax for making all the <p> elements bold?',
+        question: 'What is the correct CSS syntax for making all the &ltp&gt elements bold?',
         a: 'p{text-size: bold;}',
         b: 'p style="text-size: bold;"',
         c: 'all.p{font-style: bold;}',
