@@ -191,82 +191,98 @@ This is a common feature that is displayed throughout the site. It allows users 
 ## Testing User Stories
 __
 
-|1.| As a user I want to easily navigate throught the site.|
+1. *As a user I want to easily navigate throught the site.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
 |Home Page|The user can access each page from the home page and can navigate back using the Home button |I expect that he clear navigation buttons on the home page and the use of the home button on every page allow the user to easily navigate to eact page |Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/nav-buttons.jpg)
+![See image result Here](doc/testing/home-button.jpg)
+___
 
-|2.| As a user I want to know how the quiz works before I start playing.|
+2. *As a user I want to know how the quiz works before I start playing.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|   |        |                 |                |
+|Rules Modal|Click on the Rules button|Users will click on the Rules button and a modal will appear with a list of the rules and instructions|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/rules-button-hover.jpg)
+![See image result Here](doc/testing/rules.jpg)
+___
 
-|3.| As a user I want to know how many questions I got right or wrong.|
+3. *As a user I want to know how many questions I got right or wrong.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Right & Wrong Counters|See the number over the green check or red X |If users get an answer correct the number over the green check will increase. If users get an answer wrong the number over the red X will increase|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/right-wrong-counter.jpg)
+___
 
-|4.| As a user I want to be able to tell how many questions are left.|
+4. *As a user I want to be able to tell how many questions are left.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Question Counter|See the the question counter under the answer options|The question counter will tell the user which question they are on out of 30|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/question-counter.jpg)
+___
 
-|5.| As a user I want to be able to exit the quiz whenever I want.|
+5. *As a user I want to be able to exit the quiz whenever I want.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Home Button|Users will click on the Home button|Whenever users want to navigate back to the home page they will click on the button with the Home Icon|Worked as expected|
 
-[See image result Here](url)
+![See image result Here](doc/testing/home-button.jpg)
 __
 
-|6.| As a user I want to know my score when I finish the quiz.|
+6. *As a user I want to know my score when I finish the quiz.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Score Modal|Users will click on the Score button after they answer the last question|When users click on the score button they will be given a Grade and a percentage for their score|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/features/save-score-modal.jpg)
+___
 
-|7.| As a user I want to save my score.|
+7. *As a user I want to save my score.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Save Score Modal|Users enter their name and click the Save Score button|When users click the save score button it will turn green to indicate that their results will be saved in local storage and will be brought back to the home page|Worked as ecpected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/save-score-button.jpg)
+![See image result Here](doc/testing/score-saved.jpg)
+___
 
-|8.| As a user I want to be able to see my past scores.|
+8. *As a user I want to be able to see my past scores.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Scoreboard|Users will click on the High Scores Button|When users click on the High Scores button they will see a list of the top five high scores and who scored it|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/high-scores-button.jpg)
+![See image result Here](doc/testing/scoreboard.jpg)
+___
 
-|9.| As a user I want to be able to contact the site owner.|
+9. *As a user I want to be able to contact the site owner.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Contact Page|Click on the contact button and fill out the form and click Send|When users click on the contact button they will be able to send a message via the contact form. When their message is sent succesfully the button will change to "SENT"|Worked as expected|
 
-[See image result Here](url)
-__
+![See image result Here](doc/testing/contact-button.jpg)
+![See image result Here](doc/testing/contact-page.jpg)
+![See image result Here](doc/testing/message-sent.jpg)
+___
 
-|10.| As a user I want to be able to use this site on all my devices.|
+10. *As a user I want to be able to use this site on all my devices.*
+
 | Feature | Action | Expected Result |  Actual Result |
 |---------|--------|-----------------|----------------|
-|         |        |                 |                |
+|Responsiveness|Users can change the size of their browser window or open the site on a different device|When the user opens this site on a different device the site will still function perfectly|Worked as expected|
 
 [See image result Here](url)
 __
