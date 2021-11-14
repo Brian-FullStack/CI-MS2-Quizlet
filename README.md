@@ -187,7 +187,8 @@ This is a common feature that is displayed throughout the site. It allows users 
 - [Am I Responsive](http://ami.responsivedesign.is/#) is used for creating the image at the top and to check for responsiveness.
 - [Firefox Dev Tools](https://developer.mozilla.org/en-US/docs/Tools) was used to test for responsiveness and to help with debugging as this site was being developed.
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test the performance of this site.
-- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) is a VSCode extension I used to keep the code clean throughout. 
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) is a VSCode extension I used to keep the code clean throughout.
+- [Favicon](https://favicon.io/) is used to create the site icon.
 
 ## Testing User Stories
 __
