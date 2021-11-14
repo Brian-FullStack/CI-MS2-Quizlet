@@ -432,3 +432,12 @@ Follow these steps to fork the GitHub Repository
  7. The local clone will be created.
 
 # Credits
+- All the questions used in this quiz came from [W3Schools](https://www.w3schools.com/).
+
+- James Q Quick youtube tutorial helped me to learn to save high scores in local storage. The youtube video can be found [Here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
+
+- I learned to use Email.JS from Code Institute interactive frontend walkthrough project.
+
+- [Simple Steps](https://simplestepscode.com/) JavaScript course is where I learned to write the code to control the timer. It has been a fantastic learning resource for all things JS.
+
+- A huge thanks to the many Code Institute tutors who helped me with working out bugs and giving me support.
